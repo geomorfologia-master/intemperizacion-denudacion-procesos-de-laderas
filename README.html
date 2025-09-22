@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Geomorfología</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="El tali" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Geomorfología
+]
+.subtitle[
+## Unidad 3 (Semana 4) <br> Intemperización, Denudación y Laderas (vacíos cubiertos)
+]
+.author[
+### El tali
+]
+.institute[
+### Universidad Autónoma de Santo Domingo (UASD)
+]
+.date[
+### Actualizado: 2025-09-22
+]
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+.remark-slide-content {
+  font-size: 24px;
+  line-height: 1.4;
+  &lt;!-- font-family: "Inter", "Helvetica Neue", Arial, sans-serif; --&gt;
+}
+
+.title-slide {
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.title-slide .remark-slide-content {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.large { font-size: 150% }
+.medium { font-size: 130% }
+.small { font-size: 110% }
+.tiny { font-size: 90% }
+.tiniest { font-size: 60% }
+
+.green { color: #2E8B57; }
+.blue { color: #4169E1; }
+.red { color: #DC143C; }
+
+.highlight {
+  background-color: #ffff99;
+  padding: 2px 4px;
+}
+
+.box {
+  background-color: #f0f8ff;
+  border: 2px solid #4169E1;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.equation {
+  background-color: #f5f5f5;
+  border-left: 5px solid #2E8B57;
+  padding: 15px;
+  margin: 10px 0;
+  font-family: 'Courier New', monospace;
+}
+&lt;/style&gt;
+
+
+### Geomorfología climática · Ciclo de carbono a largo plazo · Modelos de laderas/morfometría
+
+.small[**Curso:** Geomorfología (GEO‑114) · **UASD**]
+
+---
+
+## Objetivos de esta mini‑unidad
+
+1. Integrar el **marco climático** (árido, semiárido, tropical húmedo) con los **procesos** de meteorización, denudación y laderas.
+2. Explicar el **ciclo de carbono a largo plazo** y el papel de la **meteorización química** como retroalimentación climática.
+3. Introducir **modelos simples de laderas** (difusión, balance de masa) y métricas morfométricas.
+4. Conectar con los materiales ya existentes (meteorización, karst, procesos de laderas) y proponer **actividades**.
+
+---
+
+## Mapa conceptual (panorama)
+
+- **Clima** controla **agua** y **temperatura** → condiciona **meteorización** (física/química/biológica).
+- **Producción de regolito** vs **transporte en ladera** → define **denudación** y formas.
+- **Ciclo de carbono a largo plazo**: meteorización de silicatos ↔️ CO₂ atmosférico → regulación climática.
+- **Geomorfología climática**: conjuntos de procesos‑formas característicos (árido, semiárido, tropical húmedo).
+- **Modelos de laderas**: de balance/continuidad (qₛ = −D ∂z/∂x) y métricas S‑A, curvaturas.
+
+---
+
+## 1) Geomorfología climática — Árido
+
+**Rasgos de proceso**
+
+- Predominio **físico**: termoclastia, haloclastia, ciclos de humectación‑secado, baja meteorización química.
+- **Baja cobertura** vegetal → alta **energía eólica**; eventos de lluvia **episódicos** con picos de caudal.
+
+**Formas y secuencias típicas**
+
+- **Pavimentos desérticos**, **tafoni** y oquedades, **lajas** por descompresión.
+- **Pedimentos** y **inselbergs**; abanicos aluviales, **wadi/arroyos efímeros**.
+- **Yardangs**, dunas (vinculados a deflación y abrasión eólica).
+
+**Claves didácticas**
+
+- Contrastar perfiles de **regolito delgado** sobre litologías resistentes vs sectores de acumulación aluvial.
+
+---
+
+## 1) Geomorfología climática — Semiarido
+
+- Transición proceso‑forma: combinación de **pulsos pluviales** con mayor organización de red de drenaje.
+- Incremento de **costras** (biocostras, calcretas/yesíferas) y **badlands** en materiales finos.
+- Laderas con mezcla de **reptación** y **lavado**; abanicos más compuestos.
+
+**Actividad**: identificar en imágenes (GE/Earth Engine) superficies de pedimento vs abanicos y proponer un perfil topográfico interpretado.
+
+---
+
+## 1) Geomorfología climática — Tropical húmedo
+
+- **Meteorización química intensa** (lixiviación alta; pH 4–6), espesores de **saprolito** grandes; suelos lateríticos/ferralsoles.
+- **Biogeomorfología**: raíces, ácidos húmicos/fúlvicos, biocostras en claros; intensa producción de finos.
+
+**Formas**
+
+- Colinas convexo‑cóncavas, **valles en V** con manto espeso, **relieves residuales**; frecuente **karst tropical** (torres, conos, mogotes).
+
+**Comparativa**
+
+- Mayores **tasas de alteración** pero **transporte** condicionado por cubierta vegetal y régimen de lluvias.
+
+---
+
+## 2) Ciclo de carbono a largo plazo (Urey–Berner)
+
+**Idea central**
+
+- El **CO₂** se consume durante la **meteorización de silicatos** y retorna con el **vulcanismo**/metamorfismo. En escalas de **10⁵–10⁶ años**, esto **estabiliza** el clima.
+
+**Estequiometría simplificada**
+
+$$
+\mathrm{CaSiO_3 + 2\,CO_2 + H_2O \to Ca^{2+} + 2\,HCO_3^- + SiO_2}
+\;\xrightarrow{\text{Transporte al océano}}\;
+\mathrm{CaCO_3 + SiO_2}
+$$
+
+.small[(Neto: **−1 CO₂** de la atmósfera por mol de silicato).]
+
+
+---
+
+## 2) Ciclo de carbono a largo plazo (Urey–Berner) (cont.)
+
+**Controles**
+
+- **Temperatura y precipitación** (cinética, caudal y acidez), **litología** (basaltos &gt; granitos), **relieve** y **tectónica** (aportes de superficie fresca), **biota** (CO₂ del suelo, raíces).
+
+**Implicación**
+
+- **Aumento** de T y P → **acelera** meteorización → **reduce** CO₂ → **retroalimentación negativa** del sistema climático.
+
+---
+
+## 2) Efectos geomórficos de la alteración química
+
+- **Espesamiento** del manto meteorizado y **profundización** del frente de alteración.
+- **Debilitamiento** mecánico → favorece **deslizamientos** en laderas y **subsidencia** en karst.
+- **Exportes** en solución `\((\mathrm{HCO_3^-}\)`, cationes) y en suspensión → control de **denudación química**.
+
+**Ejercicio breve**: a partir de registros de caudal y química (bicarbonato, Ca²⁺), estimar **pérdida de masa** (t·km⁻²·a⁻¹) en una cuenca tropical.
+
+---
+
+## 3) Balance de masa en laderas (idea práctica)
+
+- **Producción de regolito** `\(P\)` (meteorización) y **transporte** `\(E\)` (lavado, reptación, flujos) → `\(\partial z/\partial t = U - E + P_{in} - P_{out}\)`.
+- **Equilibrio dinámico** (Hack): material **alterado = evacuado** → perfiles estacionarios.
+- **Controles**: pendiente, litología, clima, cobertura, perturbación humana.
+
+**Actividad**: bosquejar perfiles donde **P &gt; E** (profundización) vs **E &gt; P** (exhumación de roca), justificando procesos dominantes.
+
+---
+
+## 3) Modelo de difusión de laderas (intro)
+
+- Flujo sólido por gravedad proporcional al **gradiente de pendiente**: `\(q_s = -D\,\partial z/\partial x\)`, con **D** (m²·a⁻¹) como "difusividad" efectiva (reptación, rainsplash, bioturbación).
+- Continuidad: `\(\partial z/\partial t = U - \partial q_s/\partial x\)`.
+- Predice laderas **convexo‑cóncavas** y **suavizado** de irregularidades.
+
+**Calibración**
+
+- Estimar **D** con cronologías (superficies solevantadas), trazadores o ajuste de perfiles.
+
+---
+
+## 3) Morfometría: pendientes, curvaturas y S–A
+
+- **Pendiente** (S) y **curvaturas** (perfil/plan) → inferencia de **convergencia/divergencia** de flujo.
+- **Relación pendiente‑área (S–A)**: distingue dominios **transporte‑limitado** (ladera) vs **capacidad limitada** (canales incipientes).
+- **Índices útiles**: TPI, TRI, LS (USLE), curvatura total.
+
+**Actividad rápida**: en un DEM local, mapear curvaturas y delimitar transiciones ladera‑canal.
+
+---
+
+## 4) Denudación por clima: síntesis
+
+- **Árido**: bajas tasas **químicas**, **picos** de transporte (eventos), fuerte **eólico** → formas agudas y superficies pulidas (pedimentos).
+- **Semiarido**: intermedias; alta **variabilidad intra‑anual** → badlands, abanicos complejos.
+- **Tropical húmedo**: **alta alteración** y espesores; transporte sostenido por lluvias → colinas suaves, valles marcados; karst tropical.
+
+**Conexión con karst**: el **CO₂ del suelo** y el régimen hídrico controlan **corrosión** y macro/microformas.
+
+---
+
+## 5) Vinculación con materiales existentes
+
+- **Zona crítica** y **perfil de meteorización** → ver diapositivas de *Meteorización y formas resultantes*.
+- **Procesos elementales de ladera** y **tipologías de movimiento de masa** → ver *Procesos de laderas y movimiento en masa*.
+- **Karst y riesgo asociado** → ver *Geomorfología kárstica* (macro/microformas, dominios tropicales).
+
+*(Esta mini‑unidad añade el enfoque climático, el ciclo de carbono y los modelos de laderas.)*
+
+---
+
+## 6) Actividades sugeridas (rápidas)
+
+1. **Climosecciones**: construir tres perfiles idealizados (árido, semiárido, tropical) etiquetando procesos/espesores.
+2. **Carbono a largo plazo**: resolver balance anual de exportes (HCO₃⁻, Ca²⁺) en una microcuenca y extrapolar a t·km⁻²·a⁻¹.
+3. **Difusión de laderas**: ajustar un perfil convexo con el modelo difusivo y discutir **D** y **U** plausibles.
+4. **Karst tropical**: clasificar fotografías (torres, conos, mogotes, lapiaces) y vincularlas a controles climáticos.
+
+---
+
+## 7) Lecturas mínimas y sugeridas
+
+- Capítulos introductorios de meteorización/denudación (manuales clásicos) y artículos de síntesis sobre **ciclo de carbono** y **difusión de laderas**.
+- Apoyarse en las diapositivas ya disponibles en el curso para **zona crítica**, **karst** y **laderas**.
+
+---
+
+class: center, middle
+
+# Fin
+
+.small[Esta presentación es un complemento para cubrir vacíos del temario de la Unidad 3.]
+
+---
+
+## Referencias
+.tiniest[
+
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false,
+  "ratio": "16:9",
+  "slideNumberFormat": "%current%/%total%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

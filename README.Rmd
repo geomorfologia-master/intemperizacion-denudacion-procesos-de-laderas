@@ -1,0 +1,277 @@
+---
+title: "Geomorfología"
+subtitle: "Unidad 3 (Semana 4) <br> Intemperización, Denudación y Laderas (vacíos cubiertos)"
+author: "El tali"
+institute: "Universidad Autónoma de Santo Domingo (UASD)"
+date: "Actualizado: `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    mathjax: default
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      slideNumberFormat: '%current%/%total%'
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width = 12, 
+  fig.height = 8, 
+  fig.retina = 3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+library(ggplot2)
+library(dplyr)
+```
+
+
+```{css, echo=FALSE, eval=T}
+.remark-slide-content {
+  font-size: 24px;
+  line-height: 1.4;
+  <!-- font-family: "Inter", "Helvetica Neue", Arial, sans-serif; -->
+}
+
+.title-slide {
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.title-slide .remark-slide-content {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.large { font-size: 150% }
+.medium { font-size: 130% }
+.small { font-size: 110% }
+.tiny { font-size: 90% }
+.tiniest { font-size: 60% }
+
+.green { color: #2E8B57; }
+.blue { color: #4169E1; }
+.red { color: #DC143C; }
+
+.highlight {
+  background-color: #ffff99;
+  padding: 2px 4px;
+}
+
+.box {
+  background-color: #f0f8ff;
+  border: 2px solid #4169E1;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.equation {
+  background-color: #f5f5f5;
+  border-left: 5px solid #2E8B57;
+  padding: 15px;
+  margin: 10px 0;
+  font-family: 'Courier New', monospace;
+}
+```
+
+
+### Geomorfología climática · Ciclo de carbono a largo plazo · Modelos de laderas/morfometría
+
+.small[**Curso:** Geomorfología (GEO‑114) · **UASD**]
+
+---
+
+## Objetivos de esta mini‑unidad
+
+1. Integrar el **marco climático** (árido, semiárido, tropical húmedo) con los **procesos** de meteorización, denudación y laderas.
+2. Explicar el **ciclo de carbono a largo plazo** y el papel de la **meteorización química** como retroalimentación climática.
+3. Introducir **modelos simples de laderas** (difusión, balance de masa) y métricas morfométricas.
+4. Conectar con los materiales ya existentes (meteorización, karst, procesos de laderas) y proponer **actividades**.
+
+---
+
+## Mapa conceptual (panorama)
+
+- **Clima** controla **agua** y **temperatura** → condiciona **meteorización** (física/química/biológica).
+- **Producción de regolito** vs **transporte en ladera** → define **denudación** y formas.
+- **Ciclo de carbono a largo plazo**: meteorización de silicatos ↔️ CO₂ atmosférico → regulación climática.
+- **Geomorfología climática**: conjuntos de procesos‑formas característicos (árido, semiárido, tropical húmedo).
+- **Modelos de laderas**: de balance/continuidad (qₛ = −D ∂z/∂x) y métricas S‑A, curvaturas.
+
+---
+
+## 1) Geomorfología climática — Árido
+
+**Rasgos de proceso**
+
+- Predominio **físico**: termoclastia, haloclastia, ciclos de humectación‑secado, baja meteorización química.
+- **Baja cobertura** vegetal → alta **energía eólica**; eventos de lluvia **episódicos** con picos de caudal.
+
+**Formas y secuencias típicas**
+
+- **Pavimentos desérticos**, **tafoni** y oquedades, **lajas** por descompresión.
+- **Pedimentos** y **inselbergs**; abanicos aluviales, **wadi/arroyos efímeros**.
+- **Yardangs**, dunas (vinculados a deflación y abrasión eólica).
+
+**Claves didácticas**
+
+- Contrastar perfiles de **regolito delgado** sobre litologías resistentes vs sectores de acumulación aluvial.
+
+---
+
+## 1) Geomorfología climática — Semiarido
+
+- Transición proceso‑forma: combinación de **pulsos pluviales** con mayor organización de red de drenaje.
+- Incremento de **costras** (biocostras, calcretas/yesíferas) y **badlands** en materiales finos.
+- Laderas con mezcla de **reptación** y **lavado**; abanicos más compuestos.
+
+**Actividad**: identificar en imágenes (GE/Earth Engine) superficies de pedimento vs abanicos y proponer un perfil topográfico interpretado.
+
+---
+
+## 1) Geomorfología climática — Tropical húmedo
+
+- **Meteorización química intensa** (lixiviación alta; pH 4–6), espesores de **saprolito** grandes; suelos lateríticos/ferralsoles.
+- **Biogeomorfología**: raíces, ácidos húmicos/fúlvicos, biocostras en claros; intensa producción de finos.
+
+**Formas**
+
+- Colinas convexo‑cóncavas, **valles en V** con manto espeso, **relieves residuales**; frecuente **karst tropical** (torres, conos, mogotes).
+
+**Comparativa**
+
+- Mayores **tasas de alteración** pero **transporte** condicionado por cubierta vegetal y régimen de lluvias.
+
+---
+
+## 2) Ciclo de carbono a largo plazo (Urey–Berner)
+
+**Idea central**
+
+- El **CO₂** se consume durante la **meteorización de silicatos** y retorna con el **vulcanismo**/metamorfismo. En escalas de **10⁵–10⁶ años**, esto **estabiliza** el clima.
+
+**Estequiometría simplificada**
+
+$$
+\mathrm{CaSiO_3 + 2\,CO_2 + H_2O \to Ca^{2+} + 2\,HCO_3^- + SiO_2}
+\;\xrightarrow{\text{Transporte al océano}}\;
+\mathrm{CaCO_3 + SiO_2}
+$$
+
+.small[(Neto: **−1 CO₂** de la atmósfera por mol de silicato).]
+
+
+---
+
+## 2) Ciclo de carbono a largo plazo (Urey–Berner) (cont.)
+
+**Controles**
+
+- **Temperatura y precipitación** (cinética, caudal y acidez), **litología** (basaltos > granitos), **relieve** y **tectónica** (aportes de superficie fresca), **biota** (CO₂ del suelo, raíces).
+
+**Implicación**
+
+- **Aumento** de T y P → **acelera** meteorización → **reduce** CO₂ → **retroalimentación negativa** del sistema climático.
+
+---
+
+## 2) Efectos geomórficos de la alteración química
+
+- **Espesamiento** del manto meteorizado y **profundización** del frente de alteración.
+- **Debilitamiento** mecánico → favorece **deslizamientos** en laderas y **subsidencia** en karst.
+- **Exportes** en solución $(\mathrm{HCO_3^-}$, cationes) y en suspensión → control de **denudación química**.
+
+**Ejercicio breve**: a partir de registros de caudal y química (bicarbonato, Ca²⁺), estimar **pérdida de masa** (t·km⁻²·a⁻¹) en una cuenca tropical.
+
+---
+
+## 3) Balance de masa en laderas (idea práctica)
+
+- **Producción de regolito** $P$ (meteorización) y **transporte** $E$ (lavado, reptación, flujos) → $\partial z/\partial t = U - E + P_{in} - P_{out}$.
+- **Equilibrio dinámico** (Hack): material **alterado = evacuado** → perfiles estacionarios.
+- **Controles**: pendiente, litología, clima, cobertura, perturbación humana.
+
+**Actividad**: bosquejar perfiles donde **P > E** (profundización) vs **E > P** (exhumación de roca), justificando procesos dominantes.
+
+---
+
+## 3) Modelo de difusión de laderas (intro)
+
+- Flujo sólido por gravedad proporcional al **gradiente de pendiente**: $q_s = -D\,\partial z/\partial x$, con **D** (m²·a⁻¹) como "difusividad" efectiva (reptación, rainsplash, bioturbación).
+- Continuidad: $\partial z/\partial t = U - \partial q_s/\partial x$.
+- Predice laderas **convexo‑cóncavas** y **suavizado** de irregularidades.
+
+**Calibración**
+
+- Estimar **D** con cronologías (superficies solevantadas), trazadores o ajuste de perfiles.
+
+---
+
+## 3) Morfometría: pendientes, curvaturas y S–A
+
+- **Pendiente** (S) y **curvaturas** (perfil/plan) → inferencia de **convergencia/divergencia** de flujo.
+- **Relación pendiente‑área (S–A)**: distingue dominios **transporte‑limitado** (ladera) vs **capacidad limitada** (canales incipientes).
+- **Índices útiles**: TPI, TRI, LS (USLE), curvatura total.
+
+**Actividad rápida**: en un DEM local, mapear curvaturas y delimitar transiciones ladera‑canal.
+
+---
+
+## 4) Denudación por clima: síntesis
+
+- **Árido**: bajas tasas **químicas**, **picos** de transporte (eventos), fuerte **eólico** → formas agudas y superficies pulidas (pedimentos).
+- **Semiarido**: intermedias; alta **variabilidad intra‑anual** → badlands, abanicos complejos.
+- **Tropical húmedo**: **alta alteración** y espesores; transporte sostenido por lluvias → colinas suaves, valles marcados; karst tropical.
+
+**Conexión con karst**: el **CO₂ del suelo** y el régimen hídrico controlan **corrosión** y macro/microformas.
+
+---
+
+## 5) Vinculación con materiales existentes
+
+- **Zona crítica** y **perfil de meteorización** → ver diapositivas de *Meteorización y formas resultantes*.
+- **Procesos elementales de ladera** y **tipologías de movimiento de masa** → ver *Procesos de laderas y movimiento en masa*.
+- **Karst y riesgo asociado** → ver *Geomorfología kárstica* (macro/microformas, dominios tropicales).
+
+*(Esta mini‑unidad añade el enfoque climático, el ciclo de carbono y los modelos de laderas.)*
+
+---
+
+## 6) Actividades sugeridas (rápidas)
+
+1. **Climosecciones**: construir tres perfiles idealizados (árido, semiárido, tropical) etiquetando procesos/espesores.
+2. **Carbono a largo plazo**: resolver balance anual de exportes (HCO₃⁻, Ca²⁺) en una microcuenca y extrapolar a t·km⁻²·a⁻¹.
+3. **Difusión de laderas**: ajustar un perfil convexo con el modelo difusivo y discutir **D** y **U** plausibles.
+4. **Karst tropical**: clasificar fotografías (torres, conos, mogotes, lapiaces) y vincularlas a controles climáticos.
+
+---
+
+## 7) Lecturas mínimas y sugeridas
+
+- Capítulos introductorios de meteorización/denudación (manuales clásicos) y artículos de síntesis sobre **ciclo de carbono** y **difusión de laderas**.
+- Apoyarse en las diapositivas ya disponibles en el curso para **zona crítica**, **karst** y **laderas**.
+
+---
+
+class: center, middle
+
+# Fin
+
+.small[Esta presentación es un complemento para cubrir vacíos del temario de la Unidad 3.]
+
+---
+
+## Referencias
+.tiniest[
+
+]
