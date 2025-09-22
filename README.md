@@ -1,1 +1,3 @@
-# intemperizacion-denudacion-procesos-de-laderas
+# Intemperización, denudación, procesos de laderas
+
+![Presentación de diapositivas. Intemperización, denudación, procesos de laderas](geomorfologia-master-github.io/intemperizacion-denudacion-procesos-de-laderas/README.html)

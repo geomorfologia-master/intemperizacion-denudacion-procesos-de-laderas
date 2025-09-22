@@ -1,6 +1,6 @@
 ---
 title: "Geomorfología"
-subtitle: "Unidad 3 (Semana 4) <br> Intemperización, Denudación y Laderas (vacíos cubiertos)"
+subtitle: "Unidad 3 (Semana 4) <br> Intemperización, denudación, procesos de laderas"
 author: "El tali"
 institute: "Universidad Autónoma de Santo Domingo (UASD)"
 date: "Actualizado: `r Sys.Date()`"
